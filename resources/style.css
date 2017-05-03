@@ -1,0 +1,83 @@
+#tldr_tooltip {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;	
+	width: 250px;
+	min-height: 100px;
+	max-height: 200px;
+	direction: rtl;
+	padding: 5px;
+	overflow: auto;
+	border: 3px solid #EAB570;
+	border-radius: 5px;
+	background-color: #F9E0B1;	
+	box-shadow: 2px 2px 5px #666666;
+	z-index: 9999;
+}
+
+#tldr_tooltip , #tldr_tooltip * {
+	font-family: Arial;
+	font-size: 14px;
+	color: #000000;
+	text-align: right;
+	line-height: 110%;
+}
+
+#tldr_tooltip .clear {
+	clear: both;
+	font-size: 0;
+}
+
+#tldr_tooltip img.loading {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+}
+
+#tldr_tooltip .amlk_row {
+	display: block;
+	border-bottom: 1px solid #CCCCCC;
+	margin: 2px auto;
+	padding: 3px 0 5px 0;
+}
+
+#tldr_tooltip .amlk_row.negative_score {
+	opacity: 0.4;
+}
+
+#tldr_tooltip .amlk_row .score {
+	display: inline-block;
+	float: left;
+	direction: ltr;
+	border: 2px solid #EAB570;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	padding: 2px 4px;
+	margin: 0 5px 5px 5px;
+}
+
+#tldr_tooltip .amlk_row .amlk_txt {
+	
+}
+
+#tldr_tooltip .amlk_row .user_row {
+	display: block;
+	margin: 3px auto 0 auto;
+	clear: both;
+}
+
+#tldr_tooltip .amlk_row .user_row .userscore {
+	display: inline-block;
+	margin: 0 3px 0 0;	
+}
+
+#tldr_tooltip .amlk_row .user_row .username ,
+#tldr_tooltip .amlk_row .user_row .userscore {
+	font-size: 12px;
+	font-style: italic;
+}
